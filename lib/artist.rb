@@ -11,4 +11,8 @@ end
   def self.all
     @@all
   end
+  
+  def songs(song)
+    song = Genre.new(song)
+  end
 end
