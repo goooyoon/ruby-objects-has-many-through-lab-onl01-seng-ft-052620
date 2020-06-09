@@ -12,7 +12,7 @@ end
     @@all
   end
   
-  def songs(song)
-    song = Genre.new(song)
+ def songs
+    Song.all.select {|song| song.artist == self}
   end
 end
