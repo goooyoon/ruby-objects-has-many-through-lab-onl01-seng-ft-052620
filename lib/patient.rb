@@ -14,12 +14,7 @@ def self.all
 end
 
 def appointments
-  Appoinment
+  Appoinment.all.select {|appointment| appointment.doctor == self }
 end
 
 end
-
- def songs
-    Song.all.select {|song| song.artist == self}
-  end
-
