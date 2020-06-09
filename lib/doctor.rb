@@ -13,7 +13,7 @@ class Doctor
   end
   
   def appointment
-    Appointment.all.select {|appointment| appointment.artist == self}
+    Appointment.all.select {|appointment| appointment.doctor == self}
 end
 
 end
