@@ -20,8 +20,9 @@ end
     Song.new(name, self, genre)
   end
   
-  def genre
-    
+def genres
+    array=Song.all.select {|song| song.artist == self}
+    array.map {|song| song.genre}
   end
   
 end
